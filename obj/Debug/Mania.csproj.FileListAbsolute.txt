@@ -1,0 +1,9 @@
+D:\Desktop\C#\Mania\bin\Debug\Mania.exe.config
+D:\Desktop\C#\Mania\bin\Debug\Mania.exe
+D:\Desktop\C#\Mania\bin\Debug\Mania.pdb
+D:\Desktop\C#\Mania\obj\Debug\Mania.csprojAssemblyReference.cache
+D:\Desktop\C#\Mania\obj\Debug\Mania.Mania.resources
+D:\Desktop\C#\Mania\obj\Debug\Mania.Properties.Resources.resources
+D:\Desktop\C#\Mania\obj\Debug\Mania.csproj.GenerateResource.cache
+D:\Desktop\C#\Mania\obj\Debug\Mania.exe
+D:\Desktop\C#\Mania\obj\Debug\Mania.pdb
