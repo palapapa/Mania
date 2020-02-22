@@ -63,7 +63,7 @@ namespace Mania
             string[] fileNames = (string[])e.Data.GetData(DataFormats.FileDrop, false);
             string[] lines = File.ReadAllLines(fileNames[0]);
             List<HitObject> hitObjects = new List<HitObject>();//a list of all `HitObject`s
-            for (int i = 0; i < lines.Length; i++)
+            for (int i = 0; i < lines.Length; i++)//parse beatmap file
             {
                 lines[i] = lines[i].TrimEnd('\n', '\r');//trim newline
                 lines[i] = lines[i].TrimStart(' ');//trim leading spaces
@@ -113,14 +113,18 @@ namespace Mania
                                     currentHitObject.Row = parameter;
                                     break;
                                 default:
-                                    DropFilePrompt.Text += $"Syntax Error at line {i + 1} argument {j + 1}: Unknown HitObject argument \"{arguments[j]}\"(no spaces allowed before and after the equal sign!)\n";
+                                    DropFilePrompt.Text += $"Syntax Error at line {i + 1} argument {j + 1}: Unknown HitObject argument \"{arguments[j]}\"(notice: no spaces allowed before and after the equal sign!)\n";
+                                    hasErrorOccured = true;
                                     break;
                             }
                         }
-                        hitObjects.Add(currentHitObject);//add currentHitObject to hitObjects list
+                        if (hasErrorOccured == false)
+                        {
+                            hitObjects.Add(currentHitObject);//add currentHitObject to hitObjects list
+                        }
                         break;
                     default:
-                        DropFilePrompt.Text += $"Syntax Error at line {i + 1}: Unknown Command \"{lines[i]}\"\n";
+                        DropFilePrompt.Text += $"Syntax Error at line {i + 1}: Unknown Command \"{command}\"\n";
                         hasErrorOccured = true;
                         break;
                 }
