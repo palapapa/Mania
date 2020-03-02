@@ -16,7 +16,7 @@ namespace Mania
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Mania());
+            Application.Run(new StartupScreen());
         }
     }
 }

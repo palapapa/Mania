@@ -28,29 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.Countdown = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // Countdown
+            // 
+            this.Countdown.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Countdown.Font = new System.Drawing.Font("Microsoft JhengHei", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Countdown.ForeColor = System.Drawing.Color.Red;
+            this.Countdown.Location = new System.Drawing.Point(0, 0);
+            this.Countdown.Name = "Countdown";
+            this.Countdown.Size = new System.Drawing.Size(178, 744);
+            this.Countdown.TabIndex = 0;
+            this.Countdown.Text = "3";
+            this.Countdown.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Countdown.Visible = false;
             // 
             // Mania
             // 
-            this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1898, 1024);
-            this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(178, 744);
+            this.Controls.Add(this.Countdown);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.MinimumSize = new System.Drawing.Size(1920, 1080);
+            this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Mania";
-            this.Text = "Mania";
-            this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Mania_DragDrop);
-            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Mania_DragEnter);
-            this.DragLeave += new System.EventHandler(this.Mania_DragLeave);
+            this.Text = "Mania by palapapa";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Mania_FormClosing);
+            this.Load += new System.EventHandler(this.Mania_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Mania_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Mania_KeyUp);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label Countdown;
     }
 }
-

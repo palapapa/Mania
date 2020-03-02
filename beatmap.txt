@@ -1,0 +1,7 @@
+bpm 180
+ho beat=0 row=0
+ho beat=0 row=7
+ho beat=3 row=1
+ho beat=6 row=2
+ho beat=9 row=8
+speed 2
