@@ -7,3 +7,4 @@ D:\Desktop\C#\Mania\obj\Debug\Mania.Properties.Resources.resources
 D:\Desktop\C#\Mania\obj\Debug\Mania.csproj.GenerateResource.cache
 D:\Desktop\C#\Mania\obj\Debug\Mania.exe
 D:\Desktop\C#\Mania\obj\Debug\Mania.pdb
+D:\Desktop\C#\Mania\obj\Debug\Mania.StartupScreen.resources

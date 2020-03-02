@@ -52,8 +52,17 @@
     <Compile Include="Mania.Designer.cs">
       <DependentUpon>Mania.cs</DependentUpon>
     </Compile>
+    <Compile Include="Startup Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startup Screen.Designer.cs">
+      <DependentUpon>Startup Screen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Startup Screen.resx">
+      <DependentUpon>Startup Screen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mania.resx">
       <DependentUpon>Mania.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +75,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include=".editorconfig" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
